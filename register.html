@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resgiter</title>
+</head>
+<body>
+<form action="{{ url_for('register')}}"method="post">
+    <input type="text"name="name" placeholder="write your name here" required>
+
+    <input type="password"name="password" placeholder="write your password here" required>
+
+     <input type="text"name="password" placeholder="write your phone here" required>
+
+    <button type="submit"> register me </button>
+
+</form>
+</body>
+</html>
