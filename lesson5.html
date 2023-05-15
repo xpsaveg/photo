@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in img %}
+   <img src="{{ i.link }}" alt="{{ key }}" style="display: block; margin: 0 auto; width: 50%;">
+<!--<button type="button"> add rating</button>-->
+<a href="/show?key={{ key }}">
+    <button type="button">show rating</button>
+</a>
+<a href="/add">
+    <button type="button">add pic</button>
+</a>
+{% endfor %}
+
+</body>
+</html>
